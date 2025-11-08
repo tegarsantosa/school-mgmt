@@ -271,6 +271,19 @@ EXPOSE 3000
 CMD ["npm", "run", "preview"]
 ```
 
+### 🐳 Development Setup with Docker Compose
+
+If you prefer to run the entire development environment (frontend, backend, and database) using Docker, follow these steps:
+
+#### 1. Prerequisites
+- Docker and Docker Compose installed
+- `.env` file created in the frontend directory (see **Environment Variables** section below)
+
+#### 2. Start the Development Environment
+```bash
+# Build and start all services in detached mode
+docker compose up -d
+
 ## 🐛 Known Issues & Solutions
 
 ### Issue 1: Notice Description Not Saving
